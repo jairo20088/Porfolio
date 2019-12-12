@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url(img/bg-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .header__container {
+    margin-left: 10rem;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 25%; }
+  .header__btn {
+    border: none;
+    outline: none;
+    margin-top: 3rem;
+    padding: 1.5rem 8rem;
+    font-size: 2.5rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-color: #785437;
+    color: #fff;
+    transition: all .2s;
+    animation: heading-btn 2.8s; }
+
+@keyframes heading-btn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .header__btn:hover {
+      background-color: #573E2A;
+      transform: translateY(-3px); }
+    .header__btn:active {
+      transform: translateY(0); }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 5.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; }
+  .nav__logo {
+    font-family: 'Dynalight';
+    font-size: 3rem;
+    color: #fff;
+    height: 4.2rem;
+    padding: 0 1.5rem 0 1.5rem;
+    margin-left: 2.4rem; }
+  .nav__menu {
+    height: 3rem;
+    position: relative;
+    margin-right: 2.4rem; }
+    .nav__menu--burger {
+      width: 3.2rem;
+      height: .42rem;
+      background-color: #fff; }
+      .nav__menu--burger::before, .nav__menu--burger::after {
+        width: 3.2rem;
+        height: .42rem;
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #fff; }
+      .nav__menu--burger::before {
+        top: 1.2rem; }
+      .nav__menu--burger::after {
+        top: 2.4rem; }
+
+.heading-1 {
+  font-size: 10rem;
+  font-weight: 400;
+  animation: heading-1 1s; }
+
+@keyframes heading-1 {
+  0% {
+    transform: translateX(-100rem); } }
+
+.heading-2 {
+  font-size: 5rem;
+  font-weight: 100;
+  animation: heading-2 1s .1s;
+  opacity: 0;
+  animation-fill-mode: forwards; }
+
+@keyframes heading-2 {
+  0% {
+    transform: translateX(-100rem); }
+  100% {
+    opacity: 1; } }

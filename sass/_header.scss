@@ -1,0 +1,44 @@
+.header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.83),rgba(0, 0, 0, 0.83)),url(img/bg-header.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__container{
+        margin-left:10rem;
+        color: #fff;
+        position: absolute;
+        text-align: center; 
+        top: 25%;
+        
+    }
+    &__btn{
+        border: none;
+        outline: none;
+        margin-top: 3rem;
+        padding: 1.5rem 8rem;
+        font-size: 2.5rem;
+        border-radius: 10rem;
+        cursor: pointer;
+        background-color: $color-primary;
+        color: #fff;
+        transition: opacity .2s;
+        animation: heading-btn 2.8s;
+
+        @keyframes heading-btn{
+            0%{opacity:0}
+            100%{opacity:1}
+        }
+
+        &:hover{
+            background-color: $color-primary-dark; 
+            transform: translateY(-3px);
+        }
+        &:active{
+            transform: translateY(0);
+        }
+         
+    }
+}

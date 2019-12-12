@@ -1,0 +1,19 @@
+.heading-1{
+    font-size: 10rem;
+    font-weight: 400;
+    animation: heading-1 1s;
+}
+@keyframes heading-1 {
+    0%{transform: translateX(-100rem);}
+}
+.heading-2{
+    font-size: 5rem;
+    font-weight: 100;
+    animation: heading-2 1s .1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes heading-2{
+   0%{transform: translateX(-100rem);}
+   100%{opacity: 1;}
+}

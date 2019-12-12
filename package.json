@@ -4,10 +4,10 @@
   "description": "Porfolio",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass sass/_main.scss ./style.css",
-    "watch": "node-sass sass/_main.scss ./style.css -w",
+    "build":"node-sass main.scss style.css",
+    "watch:sass": "node-sass main.scss style.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver "
+    "start": "npm-run-all --parallel devserver watch:sass"
   },
   "author": "Jose Mieses",
   "license": "ISC",
