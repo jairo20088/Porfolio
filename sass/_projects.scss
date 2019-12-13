@@ -1,0 +1,30 @@
+.projects{
+    
+    &__decription{
+       margin-top: 6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+
+        &--text{
+            text-align: center;
+            &-weather{
+                grid-column: 1 / 2
+            }
+            &-paragraph{
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+                text-align: left;
+            }
+        }
+        &--img{
+            display: block;
+            width: 65%;
+            &-weather{
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+        }
+    }
+}

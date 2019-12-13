@@ -18,16 +18,18 @@ body{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-section{
+.section{
     margin: 6rem auto 0 auto;
+    padding: 3rem;
     max-width: 130rem;
 }
 .btn:link,
 .btn:visited{
     padding: 1.5rem 5.3rem;
+    box-shadow: 0 1.3rem 1.5rem rgb(134, 134, 134);
     border: none;
     outline: none;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     background-color: $color-primary;
     color: #fff;
@@ -35,12 +37,26 @@ section{
     border-radius: 10rem;
     transition: all .2s;
     cursor: pointer;
-
+    
     &:hover{
+        transform: translateY(-3px);
         background-color: $color-primary-dark;
+
+    }
+    &:active{
+        transform: translateY(0);
+        box-shadow: 0 .5rem 1.5rem rgb(134, 134, 134);
     }
 }
 .btn-resume:link{
     border-radius: 0;
     margin-top: 2rem;
+}
+.btn-projects:link,
+.btn-projects:visited{
+    padding: 1.3rem 5rem;
+    
+    &:not(:last-child){
+        margin-right: 3rem;
+    }
 }
