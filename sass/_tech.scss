@@ -16,6 +16,11 @@
             background-color: $color-primary-light-2;
             color: #fff;
             padding: 0 .8rem;
+            transition: all .3s;
+
+            &:hover{
+                transform: scale(1.2) rotate(10deg);
+            }
         }
     }
 }

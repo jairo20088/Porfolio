@@ -152,7 +152,10 @@ section {
       margin-bottom: 1rem;
       background-color: #644A35;
       color: #fff;
-      padding: 0 .8rem; }
+      padding: 0 .8rem;
+      transition: all .3s; }
+      .technology__stack-items:hover {
+        transform: scale(1.2) rotate(10deg); }
 
 .heading-1 {
   font-size: 10rem;
