@@ -17,3 +17,9 @@
    0%{transform: translateX(-100rem);}
    100%{opacity: 1;}
 }
+.heading-3{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    color: $color-primary-light;
+}
