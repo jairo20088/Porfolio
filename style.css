@@ -108,6 +108,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.781);
   z-index: 1000; }
   .nav__logo {
     font-family: 'Dynalight';
@@ -136,6 +137,23 @@ section {
       .nav__menu--burger::after {
         top: 2.4rem; }
 
+.technology {
+  text-align: center;
+  background-color: #F4F4F4;
+  padding: 4rem; }
+  .technology__stack {
+    list-style: none;
+    width: 43%;
+    margin: 0 auto; }
+    .technology__stack-items {
+      display: inline-block;
+      margin-right: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background-color: #644A35;
+      color: #fff;
+      padding: 0 .8rem; }
+
 .heading-1 {
   font-size: 10rem;
   font-weight: 400;
@@ -160,6 +178,6 @@ section {
 
 .heading-3 {
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-size: 3.5rem;
   color: #8B613F; }
