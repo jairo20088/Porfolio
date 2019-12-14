@@ -103,10 +103,14 @@ body {
       .footer__contact-icons:not(:last-child) {
         margin-right: 3rem; }
 
-i::before {
-  color: #fff;
-  font-size: 3rem;
+i {
   transition: all .2s; }
+  i::before {
+    color: #fff;
+    font-size: 3rem;
+    transition: all .2s; }
+  i:hover {
+    transform: translateY(-4px); }
 
 i:hover::before {
   color: #644A35; }
@@ -157,6 +161,46 @@ i:hover::before {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.781);
   z-index: 1000; }
+  .nav__container {
+    width: 25rem;
+    height: 100%;
+    top: 5.7rem;
+    right: -25rem;
+    background-color: rgba(0, 0, 0, 0.781);
+    list-style: none;
+    position: fixed;
+    z-index: 500;
+    transition: all .3s; }
+    .nav__container .close {
+      color: #fff;
+      text-align: right;
+      margin-right: 1rem;
+      text-align: right; }
+      .nav__container .close span {
+        display: inline-block;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        transition: all .2s;
+        border-radius: 50%; }
+        .nav__container .close span:hover {
+          background-color: #fff;
+          color: #000; }
+    .nav__container-items {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+      text-align: center; }
+      .nav__container-items a:link,
+      .nav__container-items a:visited {
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        display: inline-block;
+        padding: 1rem;
+        background-color: transparent;
+        transition: all .17s; }
+      .nav__container-items a:hover {
+        background-color: white;
+        color: #000; }
   .nav__logo {
     font-family: 'Dynalight';
     font-size: 3rem;

@@ -29,16 +29,23 @@
            &:not(:last-child){
             margin-right: 3rem;
         }
+        
        }
     }
 }
 i{
+    transition: all .2s;
     &::before{
         color: #fff;
         font-size: 3rem;
         transition: all .2s;
+        
+    }
+    &:hover{
+        transform: translateY(-4px);
     }
 }
 i:hover::before{
     color: $color-primary-light-2;
+    
 }
