@@ -1,0 +1,44 @@
+.footer{
+    
+    background-image: $overlay,url(img/footer.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    &__copyright{
+        color: #fff;
+        margin-top: 1rem;
+    }
+    &__line{
+        height: 1px;
+        background-color: #fff;
+    }
+    &__email{
+        color: #fff;
+        font-size: 1.7rem;
+        margin-top: -2rem;
+        margin-bottom: 2.5rem;
+
+    }
+    &__contact{
+       list-style: none;
+       margin-bottom: 1.5rem;
+
+       &-icons{
+           display: inline-block;
+           &:not(:last-child){
+            margin-right: 3rem;
+        }
+       }
+    }
+}
+i{
+    &::before{
+        color: #fff;
+        font-size: 3rem;
+        transition: all .2s;
+    }
+}
+i:hover::before{
+    color: $color-primary-light-2;
+}

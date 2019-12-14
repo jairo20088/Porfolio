@@ -5,7 +5,7 @@
     
     
     &__left{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.83),rgba(0, 0, 0, 0.83)),url(img/bg-about.JPG);
+        background-image: $overlay,url(img/bg-about.JPG);
         background-repeat: no-repeat;
         background-size: 90%; 
         position: relative;
