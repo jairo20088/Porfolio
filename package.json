@@ -7,6 +7,7 @@
     "build":"node-sass main.scss style.css",
     "watch:sass": "node-sass main.scss style.css -w",
     "devserver": "live-server --browser=firefox",
+    "compress:sass": "node-sass main.scss style.css --output-style compressed",
     "start": "npm-run-all --parallel devserver watch:sass"
   },
   "author": "Jose Mieses",
