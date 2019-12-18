@@ -2,3 +2,7 @@ node_modules
 dist
 Resume.pdf
 to-do
+public
+.firebase
+.firebaserc
+firebase.json
